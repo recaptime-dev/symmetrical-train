@@ -1,3 +1,7 @@
 [[redirects]]
-  from = "/*"
-  to = "/:splat"
+  from = "/"
+  to = "https://madebythepins.tk"
+
+[[redirects]]
+  from = "/about"
+  to = "https://madebythepins.tk/about"
