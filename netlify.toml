@@ -1,7 +1,15 @@
 [[redirects]]
   from = "/"
-  to = "https://madebythepins.tk"
+  to = "https://recaptime.eu.org"
 
 [[redirects]]
   from = "/about"
-  to = "https://madebythepins.tk/about"
+  to = "https://recaptime.eu.org/about"
+
+[[redirects]]
+  from = "/community"
+  to = "https://recaptime.eu.org/community"
+
+[[redirects]]
+  from = "/*"
+  to = "https://recaptime.eu.org"
