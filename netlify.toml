@@ -1,15 +1,36 @@
+# We manage redirects via netlify.toml to not polute the public directory.
+#
+# Docs:
+# - Redirects: https://docs.netlify.com/routing/redirects/redirect-options
+
+# homepage
 [[redirects]]
   from = "/"
   to = "https://recaptime.eu.org"
 
+# about
 [[redirects]]
   from = "/about"
   to = "https://recaptime.eu.org/about"
 
+# community
 [[redirects]]
   from = "/community"
   to = "https://recaptime.eu.org/community"
 
+# squad members' profile page
+[[redirects]]
+  from = "/crew"
+  to = "https://recaptime.eu.org/crew"
+[[redirects]]
+  from = "/crew/:user"
+  to = "https://recaptime.eu.org/crew/:user"
+[[redirects]]
+  from = "/~:user"
+  to = "https://recaptime.eu.org/~:user"
+
+# meta redirect for anything else via splats (https://docs.netlify.com/routing/redirects/redirect-options/#splats)
+# to simply redirect rules management
 [[redirects]]
   from = "/*"
-  to = "https://recaptime.eu.org"
+  to = "https://recaptime.eu.org/:splat"
